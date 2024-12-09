@@ -1,0 +1,37 @@
+    body{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        /* background-color:aliceblue; */
+        background: linear-gradient(180deg, #f5f7fa, #edf1f5);
+        font-family: "Poppins", serif;
+        }
+        h1,h2,h3,h4,h5,h6,p,div,img,i{
+            margin: 0%;
+            padding: 0%;  
+        }
+        .main{
+            width: 100%;
+        margin-top: 5%;
+        }
+        .Html>h5{
+            word-spacing: 20px;
+            font-size: xx-large;
+         }
+         .Html>h5>i{
+             padding-left: 20px;
+             background-color: wheat;
+             padding-right: 20px;
+             color:peru;
+         }
+         .Html{
+             border: 1px  solid white;
+             width: 70%;
+             /* background-color: white; */
+             color: black;
+             /* font-size: xx-large; */
+             /* height: 10vh; */
+             padding-top: 10px;
+             padding-bottom: 10px;
+             padding-left: 10%;
+         }

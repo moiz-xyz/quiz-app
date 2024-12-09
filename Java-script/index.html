@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front end Quiz</title>
+    <link rel="stylesheet" href="../Html/style.css">
+    <script src="https://kit.fontawesome.com/8dd8a19338.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="main">
+            <div class="Html">
+                    <h5> <i class="fa-solid fa-code"></i> Javascrpit</h5>
+        </div>
+        <div class="timer">
+            <span id="timer"></span>
+        </div>
+        <div class="questions">
+            <h2 id="ques"></h2>
+        </div>
+<div class="ans">
+    <label>
+        <input onclick="buttondisplay()" type="radio" name="answers" value="1">
+        <span id="option1"></span>
+    </label> <br>
+    <label>
+        <input onclick="buttondisplay()" type="radio" name="answers" value="2">
+        <span id="option2"></span>
+    </label> <br>
+    <label>
+        <input onclick="buttondisplay()" type="radio" name="answers" value="3">
+        <span id="option3"></span>
+    </label><br>
+    <label>
+        <input onclick="buttondisplay()" type="radio" name="answers" value="4">
+        <span id="option4"></span>
+    </label>
+    <br>
+    <button  disabled id="next" onclick="nextquestion()">Next Question</button>
+</div>
+
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

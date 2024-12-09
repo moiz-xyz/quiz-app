@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8dd8a19338.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
+</head>
+<body>
+<div>
+    <div class="nav">
+        <div class="logo">
+            <img src="https://i.pinimg.com/736x/39/3d/bb/393dbb2322e0798066ac0b843d1161ca.jpg" alt="">
+        <h2>uizify</h2>
+        </div>
+        <div class="lists">
+            <ul>
+                <li>Home</li>
+                <li>Why us ?</li>
+                <li>About us</li>
+            </ul>
+        </div>      
+              <div class="login">  
+               <a href="./Login& signup/login index.html"> <button> Login  </button> </a>
+               <a href="./Login& signup/signup.html"> <button> Signup </button>  </a>
+            </div>
+            <i id="bars" onclick = "show ()" class="fa-solid fa-bars"></i>
+            <div class="mobile-nav">
+                <i id="cross" onclick="hide ()" class="fa-solid fa-xmark"></i>
+                <ul>
+                    <li>Home</li>
+                    <li>Why us ?</li>
+                    <li>About us</li>
+                </ul>
+              <a href="./Login& signup/login index.html"> <button> Login</button></a>
+                <a href="./Login& signup/signup.html"><button> Signup </button>  </a>
+            </div>
+    </div>
+    
+ <div class="main_content">
+    <div class="welcome">
+        <h2>Welcome to the  <br> 
+            <b> Front-end quiz! </b></h2>
+
+    <p> <b>Signup for free </b> & Pick a quiz to get started</p>
+    </div>
+    <div class="subjects">
+        
+        <a onclick="check (event)" href="./Html/index.html">
+            <div  class="Html">
+             <h5><i class="fa-solid fa-code"></i> HTML</h5> 
+        </div> </a>
+       <a onclick="check (event)" href="./Css/index.html">
+        <div class="css">
+          <h5><i class="fa-brands fa-css3-alt"></i> CSS</h5> 
+        </div> </a>
+       <a onclick="check (event)" href="./Java-script/index.html"> 
+        <div class="js">
+        <h5><i class="fa-brands fa-square-js"></i> JAVASCRIPT</h5>
+        </div> </a>
+    </div>
+ </div>
+ 
+</div>
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>

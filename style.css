@@ -1,0 +1,460 @@
+body{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+/* background-color:aliceblue; */
+background: linear-gradient(180deg, #f5f7fa, #edf1f5);
+font-family: "Poppins", serif;
+}
+h1,h2,h3,h4,h5,h6,p,div,img,i{
+    margin: 0%;
+    padding: 0%;  
+}
+.nav{
+    width: 100%;
+    display: flex; 
+    background-color : white;
+    color: black;
+}
+.logo{
+    width: 30%;
+    display: flex;
+    gap: 0px;
+}
+.logo>h2{
+    margin-top: 12px;
+    font-size: xx-large;
+    padding-right: 10px;
+}
+.logo>img{
+    width: 18%;
+    background-color: transparent;
+}
+.lists{
+    display: flex;
+    width: 50%;
+}
+.lists >ul{
+list-style-type: none;
+display: inline-flex;
+gap: 50px;
+font-size: larger;
+margin-top: 20px;
+
+}
+.login{
+  width: 20%;
+}
+.login a>button{
+    border: 2px solid  black;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: larger;
+    text-align: center;
+    margin-top: 10px;
+}
+.mobile-nav{
+    display: none;
+}
+#bars{
+display: none;
+}
+
+.main_content{
+    margin-top: 150px;
+    display: flex;
+    width: 100%;
+    }
+    .welcome{
+        width: 50%;
+        padding-left: 120px;
+    }
+    .welcome>h2{
+        font-size: 55px;
+        width: 80%;
+        color: black;
+        font-weight: 200;
+    }
+    .welcome>p{
+    margin-top: 40px;
+    }
+.subjects{
+    margin-top: 10px;
+width: 50%;
+}
+.css{
+    border: 1px  solid white;
+    width: 70%;
+    background-color: white;
+    color: black;
+    font-size: xx-large;
+    /* height: 10vh; */
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.Html>a>h5{
+   word-spacing: 20px;
+}
+.Html>h5>i{
+    padding-left: 20px;
+}
+a{
+    text-decoration: none;
+}
+.Html{
+    border: 1px  solid white;
+    width: 70%;
+    background-color: white;
+    color: black;
+    font-size: xx-large;
+    /* height: 10vh; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.Html>h5>i{
+    padding-left: 20px;
+    background-color: wheat;
+    padding-right: 20px;
+    color:peru;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.css>h5{
+   word-spacing: 20px;
+}
+.css>h5>i{
+    padding-left: 20px;
+    background-color: rgba(137, 43, 226, 0.206);
+    padding-right: 20px;
+    color:blueviolet;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.js{
+    border: 1px  solid white;
+    width: 70%;
+    background-color: white;
+    color: black;
+    font-size: xx-large;
+    /* height: 10vh; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+
+}
+.js>h5{
+   word-spacing: 20px;
+}
+.js>h5>i{
+    padding-left: 20px;
+    background-color: rgba(11, 11, 208, 0.114);
+    padding-right: 20px;
+    color:rgb(17, 156, 202);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media only screen and (max-width: 480px) {
+    .nav{
+        width: 100%;
+        display: flex; 
+        background-color :white;
+        color: black;
+    }
+    .logo{
+        width: 50%;
+    }
+    .logo>img{
+        width: 30%;
+    }
+    
+    .logo>h2{
+        margin-top: 10px;
+        font-size: x-large;
+        padding-right: 10px;
+    }
+    
+    .lists{
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+    #cross{
+        margin-left: 90%;
+        font-size: xx-large;
+    }
+    #bars{
+        display: block;
+        font-size: xx-large;
+        margin-left: 140px;
+        margin-top: 10px;
+    }
+    .mobile-nav {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #1c1c1c; /* Same dark gray as nav */
+        color: white;
+        width: 62%;
+        height: 5   0vh;
+        padding: 20px;
+        z-index: 1000;
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+    
+    .mobile-nav ul {
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+    }
+    
+    .mobile-nav ul li {
+        margin-bottom: 15px;
+    }
+    .mobile-nav > button{
+        border: 2px solid  black;
+        background-color: black;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: larger;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    
+    .main_content{
+    flex-direction: column;
+    margin-top: 50px;
+}
+.welcome{
+    width: 95%;
+    padding-left: 3%;
+}
+.welcome>h2{
+    font-size: 35px;
+    width: 100%;
+    color: black;
+    font-weight: 200;
+}
+.welcome>p{
+margin-top: 20px;
+}
+.subjects{
+margin-top: 10px;
+width: 90%;
+padding-left: 7%;
+}
+.Html{
+border: 1px  solid white;
+width: 90%;
+background-color: white;
+color: black;
+font-size: xx-large;
+/* height: 10vh; */
+margin-top: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.Html>h5{
+word-spacing: 20px;
+}
+.Html>h5>i{
+padding-left: 20px;
+}
+.css{
+border: 1px  solid white;
+width: 90%;
+background-color: white;
+color: black;
+font-size: xx-large;
+/* height: 10vh; */
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.css>h5{
+word-spacing: 20px;
+}
+.css>h5>i{
+padding-left: 20px;
+}
+.js{
+border: 1px  solid white;
+width: 90%;
+background-color: white;
+color: black;
+font-size: xx-large;
+/* height: 10vh; */
+padding-top: 10px;
+padding-bottom: 10px;
+margin-top: 20px;
+
+}
+.js>h5{
+word-spacing: 20px;
+}
+.js>h5>i{
+padding-left: 20px;
+}
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .nav{
+        width: 100%;
+        display: flex; 
+        background-color :white;
+        color: black;
+    }
+    .logo{
+        width: 50%;
+    }
+    .logo>img{
+        width: 60%;
+    }
+    
+    .logo>h2{
+        margin-top: 20px;
+        font-size: x-large;
+        padding-right: 10px;
+    }
+    
+    .lists{
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+    #cross{
+        margin-left: 75%;
+        font-size: x-large;
+    }
+    #bars{
+        display: block;
+        font-size: xx-large;
+        margin-left: 80%;
+        margin-top: 10px;
+    }
+    .mobile-nav {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #1c1c1c; /* Same dark gray as nav */
+        color: white;
+        width: 62%;
+        height: 5   0vh;
+        padding: 20px;
+        z-index: 1000;
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+    
+    .mobile-nav ul {
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+    }
+    
+    .mobile-nav ul li {
+        margin-bottom: 15px;
+    }
+    .mobile-nav > button{
+        border: 2px solid  black;
+        background-color: black;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: larger;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .main_content{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .welcome{
+        width: 95%;
+        padding-left: 3%;
+    }
+    .welcome>h2{
+        font-size: 35px;
+        width: 100%;
+        color: black;
+        font-weight: 200;
+    }
+    .welcome>p{
+    margin-top: 20px;
+    }
+    .subjects{
+    margin-top: 10px;
+    width: 90%;
+    padding-left: 7%;
+    }
+    .Html{
+    border: 1px  solid white;
+    width: 90%;
+    background-color: white;
+    color: black;
+    font-size: xx-large;
+    /* height: 10vh; */
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+    .Html>h5{
+    word-spacing: 20px;
+    }
+    .Html>h5>i{
+    padding-left: 20px;
+    }
+    .css{
+    border: 1px  solid white;
+    width: 90%;
+    background-color: white;
+    color: black;
+    font-size: xx-large;
+    /* height: 10vh; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+    .css>h5{
+    word-spacing: 20px;
+    }
+    .css>h5>i{
+    padding-left: 20px;
+    }
+    .js{
+    border: 1px  solid white;
+    width: 90%;
+    background-color: white;
+    color: black;
+    font-size: xx-large;
+    /* height: 10vh; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    
+    }
+    .js>h5{
+    word-spacing: 20px;
+    }
+    .js>h5>i{
+    padding-left: 20px;
+    }
+
+}
