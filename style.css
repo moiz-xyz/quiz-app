@@ -335,6 +335,8 @@ a{
     color:white;
     cursor: pointer;
 }
+/* Initial position off the screen */
+
 @media only screen and (max-width: 480px) {
     .nav{
         width: 100%;
