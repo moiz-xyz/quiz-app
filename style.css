@@ -35,23 +35,30 @@ h1,h2,h3,h4,h5,h6,p,div,img,i{
     width: 50%;
 }
 ul{
-
+    
     list-style-type: none;
 }
 .lists >ul{
-display: inline-flex;
-gap: 50px;
-font-size: larger;
-margin-top: 20px;
-
+    display: inline-flex;
+    gap: 50px;
+    font-size: larger;
+    margin-top: 20px;
+}
+.lists>ul>li:hover{
+    cursor: pointer;
+    color:#2A5298;
+    
+    font-weight: 900;
 }
 .login{
-  width: 20%;
+    width: 20%;
 }
 .login a>button{
     border: 2px solid  black;
-    background-color: black;
-    color: white;
+    background: linear-gradient(to right, #1E3C72, #2A5298);
+    color: #FFD700; /* Use the selected color */
+    font-weight: bold;
+    /* color: white; */
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
@@ -59,45 +66,55 @@ margin-top: 20px;
     font-size: larger;
     text-align: center;
     margin-top: 10px;
+
+}
+.login>a>button:hover{
+    background-color: black;
+    cursor: pointer;
+    color: white;
 }
 .mobile-nav{
     display: none;
 }
 #bars{
-display: none;
+    display: none;
 }
 
 .main_content{
     margin-top: 150px;
     display: flex;
     width: 100%;
-    }
-    .welcome{
-        width: 50%;
-        padding-left: 120px;
-    }
-    .welcome>h2{
-        font-size: 55px;
-        width: 80%;
-        color: black;
-        font-weight: 200;
-    }
-    .welcome>p{
-    margin-top: 40px;
-    }
-.subjects{
-    margin-top: 10px;
-width: 50%;
 }
-.css{
-    border: 1px  solid white;
-    width: 70%;
-    background-color: white;
+.welcome{
+    width: 50%;
+    padding-left: 120px;
+}
+.welcome>h2{
+    font-size: 55px;
+    width: 80%;
     color: black;
-    font-size: xx-large;
-    /* height: 10vh; */
-    margin-top: 20px;
-    padding-top: 10px;
+    font-weight: 200;
+    }
+    .welcome>h2>b:hover{
+        color:#2A5298;
+        cursor: pointer;
+ }
+    .welcome>p{
+        margin-top: 40px;
+    }
+    .subjects{
+        margin-top: 10px;
+        width: 50%;
+    }
+    .css{
+        border: 1px  solid white;
+        width: 70%;
+        background-color: white;
+        color: black;
+        font-size: xx-large;
+        /* height: 10vh; */
+        margin-top: 20px;
+        padding-top: 10px;
     padding-bottom: 10px;
 }
 .Html>a>h5{
@@ -148,10 +165,10 @@ a{
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 20px;
-
+    
 }
 .js>h5{
-   word-spacing: 20px;
+    word-spacing: 20px;
 }
 .js>h5>i{
     padding-left: 20px;
@@ -162,25 +179,29 @@ a{
     padding-bottom: 10px;
 }
 .h2{
-    margin-top: 150px;
-    margin-bottom: 20px;
+    margin-top: 110px;
+    margin-bottom: 50px;
     text-align: center;
-    font-size: xx-large;
+    font-size: 3em;
+}
+.h2:hover{
+    color:#2A5298;
 }
 .whyus {
     /* background-color: rgba(0, 0, 0, 0.819); */
     background: linear-gradient(to right, #1E3C72, #2A5298);
     /* background-color: #F5F5F5; Soft light gray */
-
     color: white;
     display: flex;
     flex-wrap: wrap; /* Allows items to wrap on smaller screens */
     justify-content: space-between; /* Adds equal space between the items */
     padding: 20px; /* Adds spacing inside the container */
     gap: 20px; /* Adds consistent spacing between divs */
+    
 }
 
 .whyus > div {
+    margin-bottom: 20px;
     width: 32%;
     min-width: 280px; /* Ensures divs don't shrink too much on small screens */
     flex-grow: 1; /* Allows divs to stretch if there's extra space */
@@ -216,35 +237,103 @@ a{
     text-align: justify; 
     margin: 0; 
 }
+.story{
+    width: 80%;
+    margin-top: 10%;
+    display: flex;
+    margin-left: 20%;
+}
+.story>div{
+    width: 40%;
+}
+.story>div>img{
+    width: 90%;
+    border: 1px solid white;
+    border-radius:100px ;
+}
+.content{
+    font-size: x-large;
+    margin-left: 10%;
+}
+.content>h3{
+    color:#1E3C72;
+    /* width: 90%; */
+    font-weight: bolder;
+    font-size: 2em;
+}
+.content>button{
+    background-color:#1E3C72;
+  color: white;
+  margin-top: 30px;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2p solid white;
+  border-radius:100px ;
+  margin-left: 20px;
+}
+#FAQs{
+    background-color: black;
+  color: white;
+  margin-top: 30px;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2p solid white;
+  border-radius:100px ;
+  margin-left: 20px; 
+}
+.content>button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+#FAQs:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
 .footer{
     display: flex;
     width:100%;
     margin-top: 80px;
     background: linear-gradient(to right, #1E3C72, #2A5298);
     color: #FFD700; /* Use the selected color */
+}
 
-
-}
-.footer>.logo{
-    width: 30%;
-}
-.footer>div >img{
-    width: 30%;
-    height: 25vh;
-    margin-top: 30px;
-}
-.footer>div>h2{
-    width: 50%;
-    height: 25vh;
-    margin-top: 80px
+#h1{
+    width: 20%;
+    text-align: center;
+    margin-top: 90px;
+    font-size: 3em;
+    font-weight:800;
 }
 .f1{
-    width: 40%;
-    margin-top: 80px
+    width: 50%;
+    margin-top: 90px;
+    font-size: x-large;
+}
+.f1>div>i{
+    font-size: xx-large;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .footerul{
+    width: 30%;
     display: flex;
     margin-top: 60px;
+    gap: 10px;
+    font-size:larger;
+    margin-bottom: 100px;
+}
+.footerul>ul>li:hover{
+    color:white;
+    cursor: pointer;
 }
 @media only screen and (max-width: 480px) {
     .nav{
@@ -308,7 +397,7 @@ a{
     .mobile-nav ul li {
         margin-bottom: 15px;
     }
-    .mobile-nav > button{
+    .mobile-nav>a>button{
         border: 2px solid  black;
         background-color: black;
         color: white;
@@ -319,6 +408,7 @@ a{
         font-size: larger;
         text-align: center;
         margin-top: 10px;
+        border: 2p solid red;
     }
     
     
@@ -394,6 +484,108 @@ word-spacing: 20px;
 }
 .js>h5>i{
 padding-left: 20px;
+}
+.story{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    margin-left: 2%;
+
+}
+.story>div{
+    width: 100%;
+}
+.story>div>img{
+    width: 90%;
+    border: 1px solid white;
+    border-radius:100px ;
+}
+.content{
+    font-size: larger;
+    margin-left: 0%;
+}
+.content>h3{
+    color:#1E3C72;
+    /* width: 90%; */
+    font-weight: bolder;
+    font-size: 1em;
+}
+.content>button{
+    background-color:#1E3C72;
+  color: white;
+  margin-top: 30px;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2p solid white;
+  border-radius:100px ;
+  margin-left: 20px;
+}
+#FAQs{
+    background-color: black;
+  color: white;
+  margin-top: 30px;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2p solid white;
+  border-radius:100px ;
+  margin-left: 20px; 
+}
+.content>button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+#FAQs:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin-top: 80px;
+    background: linear-gradient(to right, #1E3C72, #2A5298);
+    color: #FFD700; /* Use the selected color */
+}
+
+#h1{
+    width: 20%;
+    text-align: center;
+    margin-top: 90px;
+    font-size: 3em;
+    font-weight:800;
+    margin-left: 80px;
+}
+.f1{
+    width: 100%;
+    margin-top: 90px;
+    font-size: x-large;
+    text-align: center;
+}
+.f1>div>i{
+    font-size: xx-large;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.footerul{
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+    gap: 50px;
+    font-size:large;
+    margin-bottom: 100px;
+}
+.footerul>ul>li:hover{
+    color:white;
+    cursor: pointer;
 }
 }
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
@@ -543,6 +735,108 @@ padding-left: 20px;
     }
     .js>h5>i{
     padding-left: 20px;
+    }
+    .story{
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        margin-left: 2%;
+    
+    }
+    .story>div{
+        width: 100%;
+    }
+    .story>div>img{
+        width: 50%;
+        border: 1px solid white;
+        border-radius:100px ;
+    }
+    .content{
+        font-size: larger;
+        margin-left: 0%;
+    }
+    .content>h3{
+        color:#1E3C72;
+        /* width: 90%; */
+        font-weight: bolder;
+        font-size: 1em;
+    }
+    .content>button{
+        background-color:#1E3C72;
+      color: white;
+      margin-top: 30px;
+      font-size: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: 2p solid white;
+      border-radius:100px ;
+      margin-left: 20px;
+    }
+    #FAQs{
+        background-color: black;
+      color: white;
+      margin-top: 30px;
+      font-size: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: 2p solid white;
+      border-radius:100px ;
+      margin-left: 20px; 
+    }
+    .content>button:hover{
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+    #FAQs:hover{
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        margin-top: 80px;
+        background: linear-gradient(to right, #1E3C72, #2A5298);
+        color: #FFD700; /* Use the selected color */
+    }
+    
+    #h1{
+        width: 20%;
+        text-align: center;
+        margin-top: 90px;
+        font-size: 3em;
+        font-weight:800;
+        margin-left: 80px;
+    }
+    .f1{
+        width: 100%;
+        margin-top: 90px;
+        font-size: x-large;
+        text-align: center;
+    }
+    .f1>div>i{
+        font-size: xx-large;
+        margin-left: 40px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .footerul{
+        width: 100%;
+        display: flex;
+        margin-top: 60px;
+        gap: 50px;
+        font-size:large;
+        margin-bottom: 100px;
+    }
+    .footerul>ul>li:hover{
+        color:white;
+        cursor: pointer;
     }
 
 }

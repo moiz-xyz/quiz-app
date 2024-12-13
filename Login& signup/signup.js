@@ -35,9 +35,9 @@ function signup (){
             text: "Email already exists please login or try another one",
             footer: '<a href="./login index.html">Login?</a>'
           });
-        
+          
+          return;
         }  
-        return;
 
     save.push(signupdata);
     let stringify = JSON.stringify(save);

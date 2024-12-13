@@ -40,6 +40,13 @@ let data = [
         correct : "<img>"
     }
 ]
+const swalWithBootstrapButtons = Swal.mixin({
+    customClass: {
+        confirmButton: "btn btn-success",
+        cancelButton: "btn btn-danger"
+    },
+    buttonsStyling: false
+});
 
 let score = 0;
 let index = 0;
@@ -50,11 +57,11 @@ let option3= document.getElementById("option3");
 let option4= document.getElementById("option4");
 let btn = document.getElementById("next");
 let timer = document.getElementById("timer");
-let sec = 10;
+let sec = 20;
 let interval ;
 function starttimer(){
  clearInterval(interval);
-sec = 10 
+sec = 20 
 interval= setInterval(function (){
         timer.innerHTML = sec
         if(sec <= 0){
@@ -77,13 +84,33 @@ function nextquestion(){
                 score ++
             }
         }
-        option[i].checked = false
+        option[i].checked = false;
     }
-    
+
     if(index > data.length-1){
-        console.log("quiz end");
-        console.log(score);
         clearInterval(interval);
+        btn.innerHTML = "Submit ";
+        swalWithBootstrapButtons
+        .fire({
+            title: "Quiz ended",
+            text: "Your Score is: " + score ,
+            text: "Do you want to start the quiz again?", 
+            icon: "success",
+            showCancelButton: true,
+            confirmButtonText: "Yes!",
+            cancelButtonText: "No!",
+            reverseButtons: true
+          }).then((result) => {
+            if (result.isConfirmed) {
+              window.location.href = "/index.html";
+            } else if (result.dismiss === Swal.DismissReason.cancel) {
+              swalWithBootstrapButtons.fire({
+                title: "Cancelled",
+                text: "Thanks for Playing :)",
+                icon: "error"
+              });
+            }
+          });
 
     
 } else{
@@ -92,6 +119,7 @@ function nextquestion(){
     option2.innerText = data[index].option2;
     option3.innerText = data[index].option3;
     option4.innerText = data[index].option4;
+    btn.disabled = true;
 index++
 }
 starttimer();

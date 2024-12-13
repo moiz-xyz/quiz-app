@@ -15,7 +15,7 @@ function login (){
             showConfirmButton: false,
             timer: 7000
           });
-          window.location.href = "/editor/index.html";
+          window.location.href = "/index.html";
      }
      else{
           Swal.fire({
