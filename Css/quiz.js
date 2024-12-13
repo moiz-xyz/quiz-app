@@ -125,7 +125,7 @@ index++
 }
 starttimer();
 }
-nextquestion()
+nextquestion();
 function buttondisplay() {
 btn.disabled = false;
 }
