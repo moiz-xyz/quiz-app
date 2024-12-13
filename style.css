@@ -219,7 +219,7 @@ a{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
 }
 .whyus > div >i{
-    margin-left: 150px;
+    margin-left: 170px;
     font-size: x-large;
     border: 2px solid white;
     background-color: black;
@@ -850,7 +850,7 @@ padding-left: 20px;
     margin-top: 40px;
 }
     .logo>img{
-    width: 18%;
+    width: 10%;
     background-color: transparent;
 }
 }
